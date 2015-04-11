@@ -12,6 +12,7 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 from pip.req import parse_requirements
+import pip
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
